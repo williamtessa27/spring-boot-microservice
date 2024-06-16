@@ -29,4 +29,8 @@ public class InventoryService {
                                 .build()
                 ).toList();
     }
+
+    public Long countData(){
+        return inventoryRepository.count();
+    }
 }
